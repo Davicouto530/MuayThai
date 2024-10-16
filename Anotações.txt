@@ -1,6 +1,7 @@
 Em cima to "<title></title>"
 <meta desc" content=""> = Serve para colocar uma descrição para aparecer no goolgle embaixo do link
 <meta kw> =  Serve para colocar palavras chaves no site
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> = Serve para colocar um icone lá em cima no site 
 
 instalar a extensão = Live server, e depois lá embaixo clicar em "Go live": Serve para mostrar sem precisar ficar atualizando a página
 
@@ -64,3 +65,7 @@ table {
 border-spacing: 0; = Serve para não ter espaços entre as bordas na tabela
 
 Para colocar EMOJI aperta a tecla do Windows e o ponto
+
+DICAS DE SITES 
+
+iconfinder: para pegar icones
