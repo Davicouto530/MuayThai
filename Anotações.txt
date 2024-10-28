@@ -64,6 +64,14 @@ border: 2px black solid; /*Tipos de borda: dotted, dashed, double, groove, ridge
 table {
 border-spacing: 0; = Serve para não ter espaços entre as bordas na tabela
 
+* { = Reset (Compatibilizar com todos os computadores)
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+margin: 0 auto; = Centraliza o bloco no meio
+
 Para colocar EMOJI aperta a tecla do Windows e o ponto
 
 DICAS DE SITES 

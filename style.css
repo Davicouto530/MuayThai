@@ -3,10 +3,18 @@
 /*Importação de fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*Variáveis*/
+:root {
+    --preto: #000;
+    --vermelho: #ff0000;
+    --branco: #fff;
+}
+
 /*Reset (Compatibilizar com todos os computadores)*/
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -32,8 +40,7 @@ body {
     header {
         height: 100px;
         background-color: lightgray;
-        display: flex;
-        justify-content: space-between;
+        
     }
 
     #logo img{
@@ -41,6 +48,56 @@ body {
         height: 90px;
         margin: 5px 0px 0px 5px;
         border-radius: 50%;
+    }
+
+    #check {
+        display: none;
+    } 
+
+    /*Efeito de deslizar o menu*/
+    
+    /*Se o check estiver "tchecado", criar um estilo para a ul*/
+
+    #check:checked~ul {
+        left: 0px;
+        transition: 0.4s;
+    }
+
+    label {
+        font-size: 1.8em;
+        font-weight: 500;
+        position: fixed;
+        top: 30px;
+        right: 10px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul {
+        height: 100vh; /*100vh - 100% da tela em pé*/
+        background-color: gray;
+        list-style: none; /*Remover bolinhas*/
+        width: 70%;
+        position: fixed;
+        top: 100px;
+        left: -70%; /*Fazendo o menu hambúrguer*/
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        padding: 25px 20px;
+        text-align: left;
+    }
+
+    nav ul li a {
+        color: var(--branco);
+        text-decoration: none;
+    }
+
+    #github-menu {
+        width: 40px;
+        margin-left: 15px;
+        position: relative;
+        top: 180px;
     }
 
 /*-----------------------------------------*/
