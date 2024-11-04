@@ -45,6 +45,7 @@ body {
     border-radius: 25px;
     align-self: center;
     padding: 8px 0px;
+    margin-top: 40px;
 }
 
 /*---------------Breakpoints---------------*/
@@ -89,7 +90,7 @@ body {
 
     nav ul {
         height: 100vh; /*100vh - 100% da tela em pé*/
-        background-color: gray;
+        background-color: rgba(0, 0, 0, 0.904);
         list-style: none; /*Remover bolinhas*/
         width: 50%;
         position: fixed;
@@ -108,25 +109,18 @@ body {
         text-decoration: none;
     }
 
-    #github-menu {
-        width: 40px;
-        margin-left: 15px;
+    /*Video background*/
+
+   main {
+        height: 55vh;
         position: relative;
-        top: 180px;
-    }
+   }
 
-    /*Banner*/
-
-    main {
-        height: 60vh; /*Vai ocupar 60% da tela*/
-        background: url(img/WEB-BANNER-copy-4-1024x576.png);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
+   main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
 
     main h1, h2 {
         color: var(--branco);
@@ -134,12 +128,21 @@ body {
     }
 
     main h1 {
-        font-size: 3em;
-        margin-top: 30px;
+        font-size: 2em;
+        margin-top: 25px;
     }  
     
     main h2 {
-        font-size: 1.8em;
+        font-size: 1.4em;
+        margin-bottom: 25px;
+    }
+
+    .destaque {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        /*Background é diferente background-color*/
+        background: rgba(0, 0, 0, 0.397);
     }
 
 /*-----------------------------------------*/
@@ -178,6 +181,12 @@ body {
     nav ul {
         top: 120px;
        
+    }
+
+    /*Banner*/
+
+    main h1 {
+        font-size: 4em;
     }
 }
 
@@ -237,6 +246,12 @@ body {
     nav ul li a:hover {
         color: var(--vermelho);
         transition: 0.3s;
+    }
+
+    /*Banner*/
+
+    main h1 {
+        font-size: 5em;
     }
 }
 
