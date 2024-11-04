@@ -36,6 +36,7 @@ body {
 
 .botao {
     text-decoration: none;
+    text-align: center;
     color: var(--branco);
     font-size: 1.1em;
     font-weight: 700;
@@ -45,7 +46,7 @@ body {
     border-radius: 25px;
     align-self: center;
     padding: 8px 0px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 /*---------------Breakpoints---------------*/
@@ -63,7 +64,6 @@ body {
         height: 90px;
         margin: 5px 0px 0px 5px;
         border-radius: 50%;
-        
     }
 
     #check {
@@ -97,6 +97,7 @@ body {
         top: 100px;
         left: -50%; /*Fazendo o menu hambúrguer*/
         transition: 0.5s;
+        z-index: 2;
     }
 
     nav ul li {
@@ -114,27 +115,26 @@ body {
    main {
         height: 55vh;
         position: relative;
-   }
-
-   main video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+        background: url(img/testebanner.jpg);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
    }
 
     main h1, h2 {
         color: var(--branco);
-        text-shadow: #000 0.5em 0.5em 0.5em; /*Sombras*/
+        text-shadow: 7px 7px 2px rgba(0, 0, 0, 0.74);
     }
 
     main h1 {
-        font-size: 2em;
-        margin-top: 25px;
+        font-size: 1.9em;
     }  
     
     main h2 {
-        font-size: 1.4em;
-        margin-bottom: 25px;
+        font-size: 1.6em;
+        margin-top: 5px;
     }
 
     .destaque {
@@ -156,6 +156,11 @@ body {
     }
     .container {
         max-width: 540px;
+    }
+
+    main {
+        height: 72vh;
+        background-position: top center;
     }
 }
 
@@ -180,10 +185,13 @@ body {
 
     nav ul {
         top: 120px;
-       
     }
 
     /*Banner*/
+
+    main {
+        height: 55vh;
+    }
 
     main h1 {
         font-size: 4em;
@@ -232,6 +240,8 @@ body {
         height: auto;
         position: static;
         background-color: transparent;
+        display: flex;
+        gap: 50px;
     }
 
     nav ul li {
@@ -249,6 +259,10 @@ body {
     }
 
     /*Banner*/
+
+    main {
+        height: 70vh;
+    }
 
     main h1 {
         font-size: 5em;
