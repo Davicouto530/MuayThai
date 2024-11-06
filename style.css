@@ -136,14 +136,7 @@ body {
     main h2 {
         font-size: 1.6em;
         margin-top: 5px;
-    }
-
-    .destaque {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        /*Background é diferente background-color*/
-        background: rgba(0, 0, 0, 0.397);
+        margin-bottom: 30px;
     }
 
 /*-----------------------------------------*/
