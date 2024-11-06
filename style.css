@@ -116,6 +116,7 @@ body {
         height: 55vh;
         position: relative;
         background: url(img/testebanner.jpg);
+        background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
