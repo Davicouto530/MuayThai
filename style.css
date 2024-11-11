@@ -22,13 +22,15 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 1em; /* "em" é responsivo, e "1em" é o (tamanho padrão)*/
+    font-size: 1em;
+    /* "em" é responsivo, e "1em" é o (tamanho padrão)*/
     font-weight: 600;
     font-style: normal;
 }
 
 .container {
-    margin: 0 auto; /*Centraliza o bloco no meio*/
+    margin: 0 auto;
+    /*Centraliza o bloco no meio*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,95 +51,103 @@ body {
     margin-top: 10px;
 }
 
+.icon-destaque {
+    width: 60px;
+}
+
 /*---------------Breakpoints---------------*/
 
 /*Smartphone Portrait*/
 
-    /*Cabeçalho*/
+/*Cabeçalho*/
 
-    header {
-        height: 100px;
-    }
+header {
+    height: 100px;
+}
 
-    #logo img{
-        width: 90px;
-        height: 90px;
-        margin: 5px 0px 0px 5px;
-        border-radius: 50%;
-    }
+#logo img {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0px 0px 5px;
+    border-radius: 50%;
+}
 
-    #check {
-        display: none;
-    } 
+#check {
+    display: none;
+}
 
-    /*Efeito de deslizar o menu*/
-    
-    /*Se o check estiver "tchecado", criar um estilo para a ul*/
+/*Efeito de deslizar o menu*/
 
-    #check:checked~ul {
-        left: 0px;
-        transition: 0.4s;
-    }
+/*Se o check estiver "tchecado", criar um estilo para a ul*/
 
-    label {
-        font-size: 1.8em;
-        font-weight: 500;
-        position: fixed;
-        top: 30px;
-        right: 10px;
-        color: rgba(0, 0, 0, 0.5);
-    }
+#check:checked~ul {
+    left: 0px;
+    transition: 0.4s;
+}
 
-    nav ul {
-        height: 100vh; /*100vh - 100% da tela em pé*/
-        background-color: rgba(0, 0, 0, 0.904);
-        list-style: none; /*Remover bolinhas*/
-        width: 50%;
-        position: fixed;
-        top: 100px;
-        left: -50%; /*Fazendo o menu hambúrguer*/
-        transition: 0.5s;
-        z-index: 2;
-    }
+label {
+    font-size: 1.8em;
+    font-weight: 500;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
 
-    nav ul li {
-        padding: 25px 20px;
-        text-align: left;
-    }
+nav ul {
+    height: 100vh;
+    /*100vh - 100% da tela em pé*/
+    background-color: rgba(0, 0, 0, 0.904);
+    list-style: none;
+    /*Remover bolinhas*/
+    width: 50%;
+    position: fixed;
+    top: 100px;
+    left: -50%;
+    /*Fazendo o menu hambúrguer*/
+    transition: 0.5s;
+    z-index: 2;
+}
 
-    nav ul li a {
-        color: var(--branco);
-        text-decoration: none;
-    }
+nav ul li {
+    padding: 25px 20px;
+    text-align: left;
+}
 
-    /*Video background*/
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
 
-   main {
-        height: 55vh;
-        position: relative;
-        background: url(img/testebanner.jpg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-   }
+/*Video background*/
 
-    main h1, h2 {
-        color: var(--branco);
-        text-shadow: 7px 7px 2px rgba(0, 0, 0, 0.74);
-    }
+main {
+    height: 55vh;
+    position: relative;
+    background: url(img/testebanner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    main h1 {
-        font-size: 1.9em;
-    }  
-    
-    main h2 {
-        font-size: 1.6em;
-        margin-top: 5px;
-        margin-bottom: 30px;
-    }
+main h1,
+h2 {
+    color: var(--branco);
+    text-shadow: 7px 7px 2px rgba(0, 0, 0, 0.74);
+}
+
+main h1 {
+    font-size: 1.9em;
+}
+
+main h2 {
+    font-size: 1.6em;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
 
 /*-----------------------------------------*/
 
@@ -148,8 +158,10 @@ body {
     #logo img {
         margin: 5px 0px 0px 5px;
     }
+
     .container {
         max-width: 540px;
+        justify-content: space-between;
     }
 
     main {
@@ -163,9 +175,11 @@ body {
 /*Tablet Portrait*/
 
 @media (min-width: 768px) {
+
     /*Cabeçalho*/
     .container {
         max-width: 720px;
+        justify-content: space-between;
     }
 
     header {
@@ -197,9 +211,11 @@ body {
 /*Tablet Landscape*/
 
 @media (min-width: 992px) {
+
     /*Cabeçalho*/
     .container {
         max-width: 960px;
+        justify-content: space-between;
     }
 }
 
@@ -210,6 +226,7 @@ body {
 @media (min-width: 1200px) {
     .container {
         max-width: 1040px;
+        justify-content: space-around;
     }
 
     /*Cabeçalho*/
@@ -218,7 +235,7 @@ body {
     }
 
     #logo img {
-        margin: 5px 0px 0px 5px;
+        margin: 5px 0px 0px 0px;
         width: 130px;
         height: 130px;
     }
@@ -230,7 +247,6 @@ body {
 
     nav ul {
         width: 100%;
-        margin-right: 100px;
         height: auto;
         position: static;
         background-color: transparent;
@@ -248,8 +264,11 @@ body {
     }
 
     nav ul li a:hover {
-        color: var(--vermelho);
-        transition: 0.3s;
+        color: var(--branco);
+        background-color: black;
+        padding: 10px;
+        border-radius: 7px;
+        transition: 0.4s;
     }
 
     /*Banner*/
@@ -259,8 +278,9 @@ body {
     }
 
     main h1 {
-        font-size: 5em;
+        font-size: 3.5em;
     }
+
 }
 
 /*-----------------------------------------*/

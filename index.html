@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,78 @@
     <link rel="shortcut icon" href="img/13466551.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Cabeçalho-->
-    <header class="container">
+    <header>
 
-        <!--Logotipo-->
-        <div id="logo">
-            <img class="img-logo" src="img/logotipo2.webp" alt="Logotipo Muay thai">
+        <div class="container">
+            <!--Logotipo-->
+            <div id="logo">
+                <img class="img-logo" src="img/logotipo2.webp" alt="Logotipo Muay thai">
+            </div>
+
+            <!--Menu-->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#9776;</label>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!--Menu-->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check">&#9776;</label>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Conteúdo</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!--Conteúdo principal-->
     <main>
 
         <!--<video autoplay muted loop src="img/8745106-uhd_4096_2160_25fps.mp4"></video>-->
-       
-            <h1>História de Muay Thai</h1>
 
-            <h2>Técnicas de Muay Thai</h2>
+        <h1>História de Muay Thai</h1>
 
-            <a class="botao" target="_blank" href="https://github.com/Davicouto530">Saiba +</a>
-       
+        <h2>Técnicas de Muay Thai</h2>
 
+        <a class="botao" target="_blank" href="https://github.com/Davicouto530">Saiba +</a>
+
+        <!--Seção de destaque-->
         
     </main>
+
+    <section id="destaque">
+        <div class="container">
+
+            <!--Imagem de destaque-->
+            <div id="imagemDestaque">
+                <img src="img/imagem-banner.png" alt="">
+            </div>
+
+            <!--Texto de destaque-->
+            <div id="textoDestaque">
+                <h2>História do Muay Thai</h2>
+
+                <p>Venha aprender um pouco sobre a história da arte marcial Muay Thai</p>
+
+                <div class="topicos">
+                    <img class="icon-destaque" src="img/icon-mauythai.png" alt="">
+
+                    <p>Benefícios do Muay Thai</p>
+                </div>
+                <div class="topicos">
+                    <img class="icon-destaque" src="img/icon-mauythai2.png" alt="">
+
+                    <p>Cultura tailandesa</p>
+                </div>
+                <div class="topicos">
+                    <img class="icon-destaque" src="img/icon-muaythai3.png" alt="">
+
+                    <p>Disciplina</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
