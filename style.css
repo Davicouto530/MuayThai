@@ -136,7 +136,7 @@ main {
 main h1,
 h2 {
     color: var(--branco);
-    text-shadow: 7px 7px 2px rgba(0, 0, 0, 0.74);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.74);
 }
 
 main h1 {
@@ -147,6 +147,63 @@ main h2 {
     font-size: 1.6em;
     margin-top: 5px;
     margin-bottom: 30px;
+}
+
+/*--------Destaque--------*/
+
+#destaque {
+    background-image: url(img/imagemdestaque5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px; /*Espaçamento interno para não encostar na borda da tela do dispositivo*/
+}
+
+/*Para esconder a imagem usamos "display: none;" no container da imagem. Para exibir novamente em telas maiores, usamos "display: block;"
+
+#imagemDestaque {
+    display: none;
+}*/
+
+#textoDestaque {
+    color: var(--branco);
+}
+
+#textoDestaque h2 {
+    margin-bottom: 20px;
+}
+
+/*Detalhe do sinal ">" referente ao elemento imediato*/
+
+#textoDestaque>p {
+    color: var(--azul);
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.topicos img {
+    margin-right: 10px;
+}
+
+.topicos p {
+    font-weight: 600;
+}
+
+/*Organizando o container após o destaue o estilo é aplicado apenas ao container da seção de destaque*/
+
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /*Arredondar a imagem*/
+    
 }
 
 /*-----------------------------------------*/
@@ -167,6 +224,21 @@ main h2 {
     main {
         height: 72vh;
         background-position: top center;
+    }
+
+    /*--------Destaque--------*/
+    
+    #destaque .container {
+        flex-direction: row;
+    }
+
+    #imagemDestaque {
+        margin-right: 50px;
+    }
+
+    #imagemDestaque img {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -203,6 +275,11 @@ main h2 {
 
     main h1 {
         font-size: 4em;
+    }
+
+    #imagemDestaque img {
+        width: 440px;
+        height: 440px;
     }
 }
 
@@ -274,13 +351,26 @@ main h2 {
     /*Banner*/
 
     main {
-        height: 70vh;
+        height: 75vh;
     }
 
     main h1 {
         font-size: 3.5em;
     }
 
+    #destaque {
+        /*O código abaixo fixa o banner(efeito paralax)*/
+        background-attachment: fixed;
+        background-position: top center;
+        height: 80vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*-----------------------------------------*/
