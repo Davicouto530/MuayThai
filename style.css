@@ -63,6 +63,7 @@ body {
 
 header {
     height: 100px;
+    background-color: white;
 }
 
 #logo img {
@@ -133,20 +134,16 @@ main {
     align-items: center;
 }
 
-main h1,
-h2 {
-    color: var(--branco);
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.74);
-}
-
 main h1 {
     font-size: 1.9em;
+    color: white;
 }
 
 main h2 {
     font-size: 1.6em;
     margin-top: 5px;
     margin-bottom: 30px;
+    color: white;
 }
 
 /*--------Destaque--------*/
@@ -200,11 +197,41 @@ main h2 {
 }
 
 #imagemDestaque img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /*Arredondar a imagem*/
-    
+    display: none;
 }
+
+/*--------sobre--------*/
+
+/*O estilo abaixo sera aplicado apenas ao container que esta subordinado a section*/
+
+#sobre .container {
+    flex-direction: column;
+}
+
+#sobre {
+    background-color: black;
+    padding: 50px 15px;
+}
+
+#sobre h2, p {
+    color: white;
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe{
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+
+#institucional h2 {
+    text-align: center;
+    font-size: 1.9em;
+}
+
 
 /*-----------------------------------------*/
 
@@ -229,7 +256,7 @@ main h2 {
     /*--------Destaque--------*/
     
     #destaque .container {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     #imagemDestaque {
@@ -237,8 +264,18 @@ main h2 {
     }
 
     #imagemDestaque img {
+        display: flex;
         width: 250px;
         height: 250px;
+        border-radius: 50%
+    }
+
+    /*--------sobre--------*/
+
+    #video iframe{
+        width: 560px;
+        height: 315px;
+        margin-top: 20px;
     }
 }
 
@@ -278,8 +315,8 @@ main h2 {
     }
 
     #imagemDestaque img {
-        width: 440px;
-        height: 440px;
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -303,7 +340,7 @@ main h2 {
 @media (min-width: 1200px) {
     .container {
         max-width: 1040px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     /*Cabeçalho*/
@@ -371,7 +408,26 @@ main h2 {
         justify-content: center;
         align-items: center;
     }
+
+    /*--------sobre--------*/
+
+    #sobre .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #institucional h2 {
+        font-size: 2.1em;
+        text-align: center;
+    }
+
+    #video iframe{
+        margin: 0;
+    }
 }
+
+/* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*-----------------------------------------*/
 
@@ -380,6 +436,7 @@ main h2 {
 @media (min-width: 1400px) {
     .container {
         max-width: 1360px;
+        justify-content: space-between;
     }
 
     header {
@@ -390,5 +447,11 @@ main h2 {
         margin: 10px 0px 0px 5px;
         width: 180px;
         height: 180px;
+    }
+
+    #destaque .container {
+        margin-top: 50px;
+        justify-content: space-around;
+        align-items: center;
     }
 }
