@@ -4,5 +4,5 @@
 Estudo de HTML 5 e CSS 3 pelo Senac Tatuapé.
 ## Autor 
 Davi do couto
-## QR Code so site 
+## QR Code do site 
 ![](img/qrcodesite.png)
