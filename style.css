@@ -171,8 +171,8 @@ main h2 {
 
 /*Detalhe do sinal ">" referente ao elemento imediato*/
 
-#textoDestaque>p {
-    color: var(--azul);
+#textoDestaque > p {
+    color: var(--branco);
 }
 
 .topicos {
@@ -187,6 +187,7 @@ main h2 {
 
 .topicos p {
     font-weight: 600;
+    color: white;
 }
 
 /*Organizando o container após o destaue o estilo é aplicado apenas ao container da seção de destaque*/
@@ -209,12 +210,12 @@ main h2 {
 }
 
 #sobre {
-    background-color: black;
+    background-color: white;
     padding: 50px 15px;
 }
 
 #sobre h2, p {
-    color: white;
+    color: black;
 }
 
 #sobre h2 {
@@ -232,6 +233,34 @@ main h2 {
     font-size: 1.9em;
 }
 
+/*-----------------Faixa de destaque--------------------*/
+
+#faixadestaque {
+    background: url(img/imagemdestaque5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#faixadestaque .container {
+    flex-direction: column;
+}
+
+#textoFaixa h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#textoFaixa p {
+    margin-bottom: 30px;
+}
+
+#imagemFaixa img {
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+}
 
 /*-----------------------------------------*/
 
@@ -424,6 +453,25 @@ main h2 {
 
     #video iframe{
         margin: 0;
+    }
+
+    /*-----------------Faixa de destaque--------------------*/
+
+    #faixadestaque {
+        background-attachment: fixed;
+        background-size: left center;
+    }
+
+    #faixadestaque .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #imagemFaixa img {
+        width: 460px;
+        height: 460px;
     }
 }
 
