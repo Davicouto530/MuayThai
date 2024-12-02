@@ -43,16 +43,50 @@ body {
     font-size: 1.1em;
     font-weight: 700;
     background: black;
-    width: 180px;
     border: 2px solid white;
-    border-radius: 25px;
+    border-radius: 26px;
     align-self: center;
-    padding: 8px 0px;
+    padding: 8px 20px;
     margin-top: 10px;
 }
 
 .icon-destaque {
     width: 60px;
+}
+
+.card {
+    width: 308px;
+    height: 420px;
+    background-color: var(--cinza);
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    text-align: center;
+    width: 304px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 0px 40px 0px;
+    text-align: center;
+}
+
+.card a {
+    padding: 10px 100px;
+    border: 0;
+    padding: 10px 40px;
 }
 
 /*---------------Breakpoints---------------*/
@@ -262,6 +296,36 @@ main h2 {
     height: 170px;
 }
 
+/*--------Conteudo de cards-----------*/
+
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2 {
+    color: var(--azul);
+    margin-bottom: 25px;
+}
+
+#todos{
+    color: var(--azul);
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /*-----------------------------------------*/
 
 /*Smartphone Landscape*/
@@ -346,6 +410,18 @@ main h2 {
     #imagemDestaque img {
         width: 300px;
         height: 300px;
+    }
+
+    /****** Destaque ******/
+    #imagemDestaque img {
+        width: 440px;
+        height: 440px;
+    }
+
+    /*Seção de conteudo - Cards*/
+
+    .card {
+        margin: 0px 10px;
     }
 }
 
