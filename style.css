@@ -20,6 +20,10 @@
 
 /*Layout*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1em;
@@ -87,6 +91,14 @@ body {
     padding: 10px 100px;
     border: 0;
     padding: 10px 40px;
+}
+
+/*-----Topo-----*/
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 /*---------------Breakpoints---------------*/
@@ -171,6 +183,7 @@ main {
 main h1 {
     font-size: 1.9em;
     color: white;
+    text-shadow: 6px 6px 2px black;
 }
 
 main h2 {
@@ -178,6 +191,7 @@ main h2 {
     margin-top: 5px;
     margin-bottom: 30px;
     color: white;
+    text-shadow: 6px 6px 2px black;
 }
 
 /*--------Destaque--------*/
@@ -324,6 +338,38 @@ main h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+/*Seção do address*/
+
+address {
+    background-color: rgb(17, 17, 17);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: 15px;
+}
+
+#email p, img {
+    margin-top: 10px;
+}
+
+#email a {
+    text-decoration: none;
+}
+
+address p {
+    color: white;
+}
+
+#mapa {
+    display: none;
 }
 
 /*-----------------------------------------*/
@@ -546,8 +592,36 @@ main h2 {
     }
 
     #imagemFaixa img {
-        width: 460px;
-        height: 460px;
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    /*Seção do address*/
+
+    address {
+        background-color: rgb(17, 17, 17);
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #contato {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    #email a {
+        text-decoration: none;
+    }
+
+    address p {
+        color: white;
+    }
+
+    #mapa {
+        display: flex;
     }
 }
 
