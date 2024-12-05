@@ -61,7 +61,7 @@ body {
 .card {
     width: 308px;
     height: 420px;
-    background-color: var(--cinza);
+    background-color: white;
     border: 2px solid black;
     margin-top: 20px;
     border-radius: 25px;
@@ -322,12 +322,12 @@ main h2 {
 }
 
 #conteudo h2 {
-    color: var(--azul);
+    color: black;
     margin-bottom: 25px;
 }
 
 #todos{
-    color: var(--azul);
+    color: black;
     margin-top: 50px;
     text-decoration: none;
     font-size: 17px;
@@ -344,16 +344,16 @@ main h2 {
 
 address {
     background-color: rgb(36, 35, 35);
-    height: 50vh;
+    height: 600px;
     display: flex;
     align-items: center;
 }
 
 #contato {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 100px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 #email a {
@@ -369,17 +369,12 @@ address {
     margin-top: 30px;
 }
 
-#wpp {
-    margin-right: 50px;
-}
-
 #wpp a {
     text-decoration: none;
 }
 
 #wpp p {
     margin: 15px 0px;
-    min-width: 150px;
 }
 
 address p {
@@ -454,7 +449,7 @@ footer {
 
     address {
         background-color: rgb(36, 35, 35);
-        height: 70vh;
+        height: 650px;
         display: flex;
         align-items: center;
     }
@@ -623,7 +618,6 @@ footer {
 
     #faixadestaque {
         background-attachment: fixed;
-        background-size: left center;
     }
 
     #faixadestaque .container {
@@ -643,7 +637,7 @@ footer {
 
     address {
         background-color: rgb(17, 17, 17);
-        height: 50vh;
+        height: 400px;
         display: flex;
         align-items: center;
     }
