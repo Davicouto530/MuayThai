@@ -343,7 +343,7 @@ main h2 {
 /*Seção do address*/
 
 address {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(36, 35, 35);
     height: 50vh;
     display: flex;
     align-items: center;
@@ -356,12 +356,30 @@ address {
     margin-left: 15px;
 }
 
-#email p, img {
+#email a {
+    text-decoration: none;
+}
+
+#email a img {
+    width: 40px;
     margin-top: 10px;
 }
 
-#email a {
+#email .p-fic {
+    margin-top: 30px;
+}
+
+#wpp {
+    margin-right: 50px;
+}
+
+#wpp a {
     text-decoration: none;
+}
+
+#wpp p {
+    margin: 15px 0px;
+    min-width: 150px;
 }
 
 address p {
@@ -370,6 +388,20 @@ address p {
 
 #mapa {
     display: none;
+}
+
+/*-----Seção do rodapé------*/
+
+footer {
+    background-color: black;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#p-nome p {
+    color: white;
 }
 
 /*-----------------------------------------*/
@@ -396,6 +428,7 @@ address p {
     
     #destaque .container {
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     #imagemDestaque {
@@ -415,6 +448,15 @@ address p {
         width: 560px;
         height: 315px;
         margin-top: 20px;
+    }
+
+    /*Seção do address*/
+
+    address {
+        background-color: rgb(36, 35, 35);
+        height: 70vh;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -533,7 +575,7 @@ address p {
         background-color: black;
         padding: 10px;
         border-radius: 7px;
-        transition: 0.4s;
+        transition: all 0.4s;
     }
 
     /*Banner*/
@@ -622,6 +664,12 @@ address p {
 
     #mapa {
         display: flex;
+    }
+
+    /*-----Seção rodapé-----*/
+
+    footer {
+        height: 25vh;
     }
 }
 
