@@ -3,7 +3,7 @@
 
 
 # HTML 5 e CSS 3
-Estudo de HTML 5 e CSS 3 pelo Senac Tatuapé.
+Estudo de HTML 5 e CSS 3 feito no Senac nas aulas do professor <a href="https://github.com/professorjosedeassis">Jose de assis</a>.
 ## Autor 
 Davi do couto
 ## QR Code do site 
