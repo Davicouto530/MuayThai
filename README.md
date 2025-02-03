@@ -1,5 +1,6 @@
 ![GitHub License](https://img.shields.io/github/license/davicouto530/site?style=for-the-badge)
 
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fdavicouto530.github.io%2FMuayThai%2F)
 
 # HTML 5 e CSS 3
 Estudo de HTML 5 e CSS 3 feito no Senac nas aulas do professor <a href="https://github.com/professorjosedeassis">Jose de assis</a>.
