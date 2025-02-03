@@ -171,7 +171,7 @@ nav ul li a {
 main {
     height: 55vh;
     position: relative;
-    background: url(img/testebanner.jpg);
+    background: url(img/banner-carrossel1.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -395,7 +395,7 @@ footer {
     justify-content: space-around;
 }
 
-#p-nome p {
+.p-nome p {
     color: white;
 }
 
